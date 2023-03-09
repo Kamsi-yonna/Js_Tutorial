@@ -1,5 +1,6 @@
-/* Script.js */
+// Script.js
 
-var currentDate = new Date();
+//To hide the tip amount till the calculation has been done
+document.getElementById("totalTip").style.display = "none";
+document.getElementById("each").style.display = "none";
 
-window.alert(currentDate);
