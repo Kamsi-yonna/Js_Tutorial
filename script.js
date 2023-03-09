@@ -14,10 +14,27 @@ function calculateTip(){
     
     //2nd step is to do some quick validations. For when people click without inputing real numbers/values
     
-    if(billAmount == )
+    // === is 'exactly equal to
+    // || is OR
+    // Return kills a function and stops it from running. it prevents the function from continuing
+    if(billAmount === "" || serviceQuality == 0 ) {
+        window.alert("Please enter some values!");
+        return;
+    }
     
+    // we need to tell the button to add the word 'each' when the totalPeople is more than 1. 
+    // We will check to see if the input is empty or less than or equal to 1.
+    if(numPeople === "" || numPeople <= 1 ) {
+        numPeople = 1;
+        
+        document.getElementById("each").style.display = "none"; // This will hide/remove the each id.
+    } else {
+        document.getElementById("each").style.display = "block"; // This will take it back to the normal display style.
+    }
     
-    
+    //Now we do some math
+    var total = (billAmount * serviceQuality) / numPeople;
+    window.alert(total);
 }
 
 //To hide the tip amount till the calculation has been done
