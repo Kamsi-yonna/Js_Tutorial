@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    
+    <h1>Arrays</h1>
+    
+    <div id="output"></div>
+
+<!--    Always best to type javascript at the end of the html body-->
+    
+<!--   Internal Script-->
+    
+<!--    These are ways to create output on your webpage using javascript
+-->
+    <script type="text/javascript">
+//        For 1 variable
+        var myVariable =  "sand, shovel, water";
+        
+//        For separating more than 1 values
+        var myArray = ["sand", "shovel", "water"];
+        
+        document.write( myArray [1] );
+        
+        document.write("<br><br>");
+       
+        
+//        Multiple values
+        var favFoods = [ "Potatoes", "Pasta", "Egusi", "Chinese Rice" ];  
+        
+        for( var i = 0; i < favFoods.length; i++ ) {
+            document.write( favFoods[i] );
+            document.write( "<br><hr>" );
+        }
+        
+//        For each value to have its own valueS
+        
+        var myFriends = [ 
+            ["Dumebz", "Female", 23 ], 
+            [ "Deza", "Female", 22 ], 
+            ["Kingsley", "Male", "54" ] 
+        ]
+        
+        document.write( myFriends[0][1] );
+    </script>
+    
+    
+    
+    
+</body>
+</html>
+

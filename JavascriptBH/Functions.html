@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    
+    <h1>Functions</h1>
+    
+    <div id="output"></div>
+
+<!--    Always best to type javascript at the end of the html body-->
+    
+<!--   Internal Script-->
+    
+<!--    These are ways to create output on your webpage using javascript
+-->
+    <script type="text/javascript">
+//        Basic Syntax
+//        function should be defined, custom name is the var and parenthesis is parameters
+//        function customName ( x,y,z) {
+////            Run some code
+//        }
+        
+        
+        function dogYears ( yourAge ) {
+            return( yourAge * 7 );
+        }
+        
+//        document.write( "If you were a dog, you'd be" + dogYears(26) + "years old!" ); 
+        
+        var age = 12;
+        var dog = dogYears( age );
+        
+        document.write( " if you were a dog, you'd be " + dog + " year old! ");
+        
+        
+    </script>
+    
+    
+    
+    
+</body>
+</html>
+

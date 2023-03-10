@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If / Else</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    
+    <h1>If / Else</h1>
+    
+    <div id="box1"></div>
+
+<!--    Always best to type javascript at the end of the html body-->
+    
+<!--   Internal Script-->
+    
+<!--    These are ways to create output on your webpage using javascript
+-->
+    <script type="text/javascript">
+        
+//        Basic if else syntac
+        
+//        if(condition to be met) {
+//            // Excecute this code true or if the condition is met
+//        }
+        
+        document.write("<br><hr>");
+        
+        // Sample
+        
+        var age = 45;
+        // My age is 25, to check if the age is greater/less than 25, we will do this.
+        
+        if(age < 30) {
+            document.getElementById("box1").innerHTML = "You are still young son.";
+            // So if the age is less than 30, I will be given the output notification of "you are..."
+            // You can also style text with javascript
+            document.getElementById("box1").style.color = "blue";
+            //For else statemenst - If the condition isnt true, then run this code.
+            
+            // else if statements are in between conditions. If this is true, or if this is true. Like a venn diagram. Conditions can sometimes be inbetween and if no conditions are met, then the else statement would be carried out 
+            
+        } else if (age > 50) {
+            document.getElementById("box1").innerHTML = "wow you are older than 50";
+             document.getElementById("box1").style.color = "orange";
+            
+        }  else {
+            document.getElementById("box1").innerHTML = "wow you must be between 30 and 50 years old.";
+             document.getElementById("box1").style.color = "red";
+        }
+        
+// There are comparative operators to check if the value is exactly or less/greater and equal to the condition
+    </script>
+    
+    
+    
+    
+</body>
+</html>
+
