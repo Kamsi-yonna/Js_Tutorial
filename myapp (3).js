@@ -1,24 +1,29 @@
-var car = {
-    make: "volvo",
-    speed: 160,
-    engine: {
-        size: 2.0,
-        make: "bmw",
-        fuel: "petrol",
-        pistons:[
-            { maker: "BMW" },
-            { maker: "BMW2" }
-        ]
-    },
-    drive: function(){ return "drive"; }
-};
+function name( fullname )
+{    
+    return fullname.firstname + fullname.lastname;
+}
 
-var array = [ 
-    "string",
-    100,
-    [ "embed", 200 ],
-    { car: "ford" },
-    function(){ return "drive"; }
-];
+// Where there are objects...
+var name1 = { firstname: "Lawrence", lastname: "Turton"  };
 
-console.log( car.make );
+const name2 = { firstname: "John", lastname: "Doe"  };
+
+console.log(
+    name( name1 ),
+    name( name2 )
+);
+
+// There are callable objects
+function embed( run )
+{
+    return run();
+}
+
+var name3 = function() { return "John Lock"  };
+
+const name4 = function() { return "Stephanie Lock" };
+
+console.log(
+    embed( name3 ),
+    embed( name4 )
+);

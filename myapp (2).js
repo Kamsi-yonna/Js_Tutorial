@@ -1,13 +1,14 @@
-console.log( "Hello world" );
+console.log( myName, printName() );
 
-console.log( 200 );
+var myName = "Lawrence";
 
-console.log( true );
-
-console.log( null );
-
-var num = 10;
-
-console.log( num );
-
-console.log( "string", 10.11, true, false, null, num );
+function printName()
+{
+    console.log( a, embed() );
+    
+    var a = 100;
+    
+    function embed(){ return "hello"; }
+    
+    return "John Doe";
+}
