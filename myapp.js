@@ -10,7 +10,7 @@ var car = {
             { maker: "BMW2" }
         ]
     },
-    drive: function(){ return "dive"; }
+    drive: function(){ return "drive"; }
 };
 
 var array = [ 
@@ -18,5 +18,7 @@ var array = [
     100,
     [ "embed", 200 ],
     { car: "ford" },
-    function(){ return "dive"; }
+    function(){ return "drive"; }
 ];
+
+console.log( car.make );
