@@ -1,13 +1,22 @@
-console.log( "Hello world" );
+var car = {
+    make: "volvo",
+    speed: 160,
+    engine: {
+        size: 2.0,
+        make: "bmw",
+        fuel: "petrol",
+        pistons:[
+            { maker: "BMW" },
+            { maker: "BMW2" }
+        ]
+    },
+    drive: function(){ return "dive"; }
+};
 
-console.log( 200 );
-
-console.log( true );
-
-console.log( null );
-
-var num = 10;
-
-console.log( num );
-
-console.log( "string", 10.11, true, false, null, num );
+var array = [ 
+    "string",
+    100,
+    [ "embed", 200 ],
+    { car: "ford" },
+    function(){ return "dive"; }
+];
